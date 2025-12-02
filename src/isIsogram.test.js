@@ -19,7 +19,8 @@ describe('isIsogram', () => {
     expect(res).toBe(false);
   });
 
-  it('should returns false when same letter appears in different cases', () => {
+  it('should returns false when same letter appears'
+    + ' in different cases consecutive', () => {
     const res = isIsogram('Adam');
 
     expect(res).toBe(false);
@@ -31,7 +32,8 @@ describe('isIsogram', () => {
     expect(res).toBe(true);
   });
 
-  it('should returns false when same letter appears in different cases', () => {
+  it('should returns false when same letter appears'
+    + ' in different cases non-consecutive', () => {
     const res = isIsogram('Oops');
 
     expect(res).toBe(false);
